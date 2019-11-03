@@ -1,0 +1,28 @@
+li{
+	list-style:none;
+}
+li span{
+	padding-left: 20px;
+	cursor: pointer;
+  background: url("../images/add.png") no-repeat center left;
+}
+li ul{/*默认隐藏的样式*/
+	/* display: none;  */
+	height:0;
+	overflow:hidden;
+	transition: all .5s linear;
+}
+.open{ background: url("../images/minus.png") no-repeat center left; }
+/*显示时的样式*/
+li:nth-child(1)>.open+ul{ 
+	/* display: block;  */
+	height:85px;
+}
+li:nth-child(2)>.open+ul{ 
+	/* display: block;  */
+	height:64px;
+}
+li:nth-child(3)>.open+ul{ 
+	/* display: block;  */
+	height:105px;
+}
